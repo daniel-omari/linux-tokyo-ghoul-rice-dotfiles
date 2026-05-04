@@ -1,3 +1,0 @@
-touch docs/.gitkeep install/.gitkeep
-touch kde/rize/.gitkeep kde/touka/.gitkeep
-touch system/grub/.gitkeep system/plymouth/.gitkeep system/sddm/.gitkeep
