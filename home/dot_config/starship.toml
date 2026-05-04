@@ -1,0 +1,53 @@
+# =============================================================================
+# starship.toml — Rize-themed prompt
+# =============================================================================
+
+format = """
+[](#8060a0)\
+$os\
+$username\
+[](bg:#b070d0 fg:#8060a0)\
+$directory\
+[](fg:#b070d0 bg:#c898d8)\
+$git_branch\
+$git_status\
+[](fg:#c898d8 bg:#e8b8f0)\
+$cmd_duration\
+[](fg:#e8b8f0)\
+$line_break$character"""
+
+[username]
+show_always = true
+style_user = "bg:#8060a0 fg:#ffe8ff"
+style_root = "bg:#cc4477 fg:#ffe8ff"
+format = '[ $user ]($style)'
+
+[os]
+disabled = false
+style = "bg:#8060a0 fg:#ffe8ff"
+[os.symbols]
+Fedora = " "
+Linux  = " "
+
+[directory]
+style = "bg:#b070d0 fg:#1a1420"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:#c898d8 fg:#1a1420"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#c898d8 fg:#1a1420"
+format = '[$all_status$ahead_behind ]($style)'
+
+[cmd_duration]
+style = "bg:#e8b8f0 fg:#1a1420"
+format = '[  $duration ]($style)'
+
+[character]
+success_symbol = '[➜](bold #c898d8)'
+error_symbol   = '[✗](bold #cc4477)'
