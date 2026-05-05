@@ -42,6 +42,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# Ricing project shortcuts
+alias rice='cd ~/linux-tokyo-ghoul-rice-dotfiles'
+alias endsession='~/linux-tokyo-ghoul-rice-dotfiles/install/end-session.sh'
+
 # Source per-user aliases if present
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 
